@@ -17,7 +17,7 @@ def shift(lst, steps):
     # http://krivaksin.ru/python-rabota-so-spiskami-osnovnyie-algoritmyi-pri-rabote-so-spiskom/       
     sorted(lst) # Сортировка списка
     maximum = lst[0]
-    for i in range(maximum + 1, len(lst)):
+    for i in range(1, len(lst)):
         if lst[i] > maximum: # Заменить на <, при поиске минимума
             maximum = lst[i]
     return lst, maximum
@@ -33,7 +33,7 @@ print(f'Исходный массив:\n {nums}',
 
 # Ввод: Сортированный циклически сдвинутый массив  А
 # Решение:
-# Присваиваем переменной М элемент массива (на позиции 0)
+# Присвоить переменной М элемент массива (на позиции 0)
 # Для позиции i массива в диапазоне от 0+1 до длины массива
 #     Если i-тый элемент > М
 #         Присвоить М этот i-ый элемент
